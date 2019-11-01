@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="customButton">
+    <declare-styleable name="CustomButton">
         <attr name="normalSolidColor" format="color" />
         <attr name="pressedSolidColor" format="color" />
         <attr name="strokeColor" format="color" />

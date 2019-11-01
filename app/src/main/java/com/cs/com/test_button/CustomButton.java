@@ -42,27 +42,27 @@ public class CustomButton extends AppCompatButton {
     private void setAttributeSet(Context context, AttributeSet attrs) {
 
         if (!isInEditMode()) {
-            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.customButton);
-            int normalSolid = a.getColor(R.styleable.customButton_normalSolidColor, Color.TRANSPARENT);
-            int pressedSolid = a.getColor(R.styleable.customButton_pressedSolidColor, Color.TRANSPARENT);
-            int strokeColor = a.getColor(R.styleable.customButton_strokeColor, Color.TRANSPARENT);
-            int leftTopRadius = a.getDimensionPixelSize(R.styleable.customButton_roundLeftTopRadius, 0);
-            int leftBottomRadius = a.getDimensionPixelSize(R.styleable.customButton_roundLeftBottomRadius, 0);
-            int rightTopRadius = a.getDimensionPixelSize(R.styleable.customButton_roundRightTopRadius, 0);
-            int rightBottomRadius = a.getDimensionPixelSize(R.styleable.customButton_roundRightBottomRadius, 0);
-            int normalTextColor = a.getColor(R.styleable.customButton_normalTextColor, 0);
-            int selectedTextColor = a.getColor(R.styleable.customButton_selectedTextColor, 0);
-            int normalStrokeColor = a.getColor(R.styleable.customButton_normalStrokeColor, Color.TRANSPARENT);
-            int pressedStrokeColor = a.getColor(R.styleable.customButton_pressedStrokeColor, Color.TRANSPARENT);
-            boolean isSelected = a.getBoolean(R.styleable.customButton_isSelected, false);
-            boolean noLeftStroke = a.getBoolean(R.styleable.customButton_noLeftStroke,false);
-            boolean noRightStroke = a.getBoolean(R.styleable.customButton_noRightStroke,false);
-            boolean noTopStroke = a.getBoolean(R.styleable.customButton_noTopStroke,false);
-            boolean noBottomStroke = a.getBoolean(R.styleable.customButton_noBottomStroke,false);
-            Drawable normalDrawable = a.getDrawable(R.styleable.customButton_normalDrawable);
-            Drawable pressedDrawable = a.getDrawable(R.styleable.customButton_pressedDrawable);
-            strokeWidth = a.getDimensionPixelSize(R.styleable.customButton_strokeWidth, 2);
-            radius = a.getDimensionPixelSize(R.styleable.customButton_roundRadius, 0);
+            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomButton);
+            int normalSolid = a.getColor(R.styleable.CustomButton_normalSolidColor, Color.TRANSPARENT);
+            int pressedSolid = a.getColor(R.styleable.CustomButton_pressedSolidColor, Color.TRANSPARENT);
+            int strokeColor = a.getColor(R.styleable.CustomButton_strokeColor, Color.TRANSPARENT);
+            int leftTopRadius = a.getDimensionPixelSize(R.styleable.CustomButton_roundLeftTopRadius, 0);
+            int leftBottomRadius = a.getDimensionPixelSize(R.styleable.CustomButton_roundLeftBottomRadius, 0);
+            int rightTopRadius = a.getDimensionPixelSize(R.styleable.CustomButton_roundRightTopRadius, 0);
+            int rightBottomRadius = a.getDimensionPixelSize(R.styleable.CustomButton_roundRightBottomRadius, 0);
+            int normalTextColor = a.getColor(R.styleable.CustomButton_normalTextColor, 0);
+            int selectedTextColor = a.getColor(R.styleable.CustomButton_selectedTextColor, 0);
+            int normalStrokeColor = a.getColor(R.styleable.CustomButton_normalStrokeColor, Color.TRANSPARENT);
+            int pressedStrokeColor = a.getColor(R.styleable.CustomButton_pressedStrokeColor, Color.TRANSPARENT);
+            boolean isSelected = a.getBoolean(R.styleable.CustomButton_isSelected, false);
+            boolean noLeftStroke = a.getBoolean(R.styleable.CustomButton_noLeftStroke,false);
+            boolean noRightStroke = a.getBoolean(R.styleable.CustomButton_noRightStroke,false);
+            boolean noTopStroke = a.getBoolean(R.styleable.CustomButton_noTopStroke,false);
+            boolean noBottomStroke = a.getBoolean(R.styleable.CustomButton_noBottomStroke,false);
+            Drawable normalDrawable = a.getDrawable(R.styleable.CustomButton_normalDrawable);
+            Drawable pressedDrawable = a.getDrawable(R.styleable.CustomButton_pressedDrawable);
+            strokeWidth = a.getDimensionPixelSize(R.styleable.CustomButton_strokeWidth, 2);
+            radius = a.getDimensionPixelSize(R.styleable.CustomButton_roundRadius, 0);
 
             a.recycle();
 
